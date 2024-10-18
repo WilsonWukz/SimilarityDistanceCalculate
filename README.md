@@ -43,6 +43,22 @@ result <- process_excel_file(file_path, sheet = 1)
 ```R
 print(result)
 ```
+### Example: 
+Original Data
+![1729244159460](https://github.com/user-attachments/assets/08739565-aefa-4641-8064-c8b76b452ffa)
+Standardized Data
+![1729244303342](https://github.com/user-attachments/assets/62a7ad73-841a-4baa-82b5-148e44ec3271)
+Calculate the Euclidean Distance Obtained
+![1729244374815](https://github.com/user-attachments/assets/c6ca711f-5de0-4e2f-bcdb-2d10b3a3bf0d)
+Calculate the Cosine Similarity Obtained
+![1729244468342](https://github.com/user-attachments/assets/9d3a156c-df5c-44c5-aef4-7e4c8e547226)
+Euclidean Distance Sorting
+![1729244612556](https://github.com/user-attachments/assets/8bdef251-8846-42b3-8fb5-9220776bdcdb)
+Cosine Similarity Sorting
+![1729244684328](https://github.com/user-attachments/assets/202b7982-9725-4d6c-99f5-6d7874974c9e)
+The top 5 most similar data sets of the two methods of Euclidean distance and cosine similarity calculation are obtained respectively.
+![1729244749088](https://github.com/user-attachments/assets/4f344b24-2e53-4d9a-a0e3-bd21dea3d20a)
+
 
 ## Functions
 
