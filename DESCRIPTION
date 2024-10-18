@@ -1,0 +1,21 @@
+Package: SimilarityDistanceCalculate
+Type: Package
+Title: Calculate Similarity and Distance Metrics for Excel Data
+Version: 0.1.0
+Author: WU KEZHAO
+Maintainer: WU KEZHAO <wilsonkwu@gmail.com>
+Description: A package designed to process numerical data from Excel files, 
+    allowing users to calculate both Euclidean distances and cosine 
+    similarity between groups of data. It reads data from Excel files, 
+    standardizes the values by column, and calculates the Euclidean 
+    distance and cosine similarity between rows (groups). The results 
+    are sorted and provided in a convenient format. This package also 
+    checks for non-numeric data and provides user-friendly warnings if 
+    non-numeric content is detected, ensuring the input data is fully 
+    numeric before analysis.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports:
+    readxl,
+    dplyr
