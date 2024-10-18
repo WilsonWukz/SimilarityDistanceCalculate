@@ -4,14 +4,6 @@
 `SimilarityDistanceCalculate` is an R package designed to process numerical data from Excel files. It allows users to calculate both Euclidean distances and cosine similarity between groups of data. The package reads data from Excel files, standardizes the values by column, and calculates the Euclidean distance and cosine similarity between rows (groups). The results are sorted and provided in a convenient format. This package also checks for non-numeric data and provides user-friendly warnings if non-numeric content is detected, ensuring the input data is fully numeric before analysis.
 
 ## Installation
-
-You can install the package from CRAN using the following command:
-
-```R
-install.packages("SimilarityDistanceCalculate")
-```
-
-Alternatively, you can install the package directly from the GitHub repository:
 # First, install the devtools package if you haven't already
 ```R
 install.packages("devtools")
