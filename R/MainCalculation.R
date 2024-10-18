@@ -174,3 +174,29 @@ process_excel_file <- function(file_path, sheet = 1) {
   top_5_comparisons <- get_top_5_comparisons(sorted_euclidean_distances, sorted_cosine_similarities)
   return(top_5_comparisons)
 }
+#' Process high-dimensional matrix
+#' 
+#' @param mat A numeric matrix. Must have row names.
+#' @return A list containing sorted Euclidean distances and sorted cosine similarities.
+process_high_dim_matrix <- function(mat) {
+  if (is.null(rownames(mat))) {
+    stop("Error: The input matrix must have row names.")
+  }
+
+  standardized_mat <- standardize_matrix(mat)
+
+  euclidean_dist_matrix <- compute_euclidean_distances(standardized_mat)
+  sorted_euclidean_distances <- get_sorted_euclidean_distances(euclidean_dist_matrix)
+
+  cosine_sim_matrix <- compute_cosine_similarities(standardized_mat)
+  sorted_cosine_similarities <- get_sorted_cosine_similarities(cosine_sim_matrix)
+
+  # 将结果保存到环境中
+  assign("sorted_euclidean_distances", sorted_euclidean_distances, envir = .GlobalEnv)
+  assign("sorted_cosine_similarities", sorted_cosine_similarities, envir = .GlobalEnv)
+
+  return(list(
+    sorted_euclidean_distances = sorted_euclidean_distances,
+    sorted_cosine_similarities = sorted_cosine_similarities
+  ))
+}
