@@ -168,6 +168,9 @@ process_excel_file <- function(file_path, sheet = 1) {
   cosine_sim_matrix <- compute_cosine_similarities(standardized_mat)
   sorted_cosine_similarities <- get_sorted_cosine_similarities(cosine_sim_matrix)
 
+  assign("sorted_euclidean_distances", sorted_euclidean_distances, envir = .GlobalEnv)
+  assign("sorted_cosine_similarities", sorted_cosine_similarities, envir = .GlobalEnv)
+
   top_5_comparisons <- get_top_5_comparisons(sorted_euclidean_distances, sorted_cosine_similarities)
 
   return(sorted_euclidean_distances)
