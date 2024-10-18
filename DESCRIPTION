@@ -19,3 +19,5 @@ LazyData: true
 Imports:
     readxl,
     dplyr
+URL: https://github.com/WilsonWukz/SimilarityDistanceCalculate
+BugReports: https://github.com/WilsonWukz/SimilarityDistanceCalculate/issues
