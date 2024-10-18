@@ -52,7 +52,7 @@ The top 5 most similar data sets of the two methods of Euclidean distance and co
 
 
 ## Functions
-
+### Built-in Functions
 - `read_matrix_from_excel(file_path, sheet)`: Reads a matrix from an Excel file and checks for non-numeric content.
   
 - `standardize_matrix(mat)`: Standardizes the input matrix by column.
@@ -69,6 +69,7 @@ The top 5 most similar data sets of the two methods of Euclidean distance and co
 
 - `get_top_5_comparisons(sorted_distances, sorted_similarities)`: Returns the top 5 comparisons for both distances and similarities.
 
+### Using Function
 - `process_excel_file(file_path, sheet)`: The main function to process the Excel file and return the top 5 comparisons.
 
 ## Author
