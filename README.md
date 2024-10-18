@@ -25,9 +25,11 @@ devtools::install_github("WilsonWukz/SimilarityDistanceCalculate")
 
 To use the `SimilarityDistanceCalculate` package, follow these steps:
 
-1. Load the package:
+1. Load the dependent packages and the package:
 
 ```R
+library(readxl)
+library(dplyr)
 library(SimilarityDistanceCalculate)
 ```
 
