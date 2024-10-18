@@ -84,5 +84,4 @@ If you encounter any issues, please report them on the [GitHub issues page](http
 
 ## URL
 [GitHub Repository](https://github.com/WilsonWukz/SimilarityDistanceCalculate)
-```
 
