@@ -1,6 +1,3 @@
-install.packages("readxl")
-install.packages("dplyr")
-
 library(readxl)
 library(dplyr)
 
