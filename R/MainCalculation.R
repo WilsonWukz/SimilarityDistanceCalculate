@@ -172,8 +172,5 @@ process_excel_file <- function(file_path, sheet = 1) {
   assign("sorted_cosine_similarities", sorted_cosine_similarities, envir = .GlobalEnv)
 
   top_5_comparisons <- get_top_5_comparisons(sorted_euclidean_distances, sorted_cosine_similarities)
-
-  return(sorted_euclidean_distances)
-  return(sorted_cosine_similarities)
   return(top_5_comparisons)
 }
