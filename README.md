@@ -48,6 +48,7 @@ Calculate the Cosine Similarity Obtained
 ![1729244468342](https://github.com/user-attachments/assets/9d3a156c-df5c-44c5-aef4-7e4c8e547226)
 
 The top 5 most similar data sets of the two methods of Euclidean distance and cosine similarity calculation are obtained respectively.
+
 ![1729244749088](https://github.com/user-attachments/assets/4f344b24-2e53-4d9a-a0e3-bd21dea3d20a)
 
 
