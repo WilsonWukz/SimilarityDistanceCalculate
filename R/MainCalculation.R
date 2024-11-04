@@ -191,7 +191,7 @@ process_high_dim_matrix <- function(mat) {
   cosine_sim_matrix <- compute_cosine_similarities(standardized_mat)
   sorted_cosine_similarities <- get_sorted_cosine_similarities(cosine_sim_matrix)
 
-  # 将结果保存到环境中
+  # Save the results into the environment
   assign("sorted_euclidean_distances", sorted_euclidean_distances, envir = .GlobalEnv)
   assign("sorted_cosine_similarities", sorted_cosine_similarities, envir = .GlobalEnv)
 
